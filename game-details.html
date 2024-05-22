@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Details - Board Game Rental</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="logo.png" alt="Board Game Rental Logo" id="logo">
+            Board Game Rental
+        </h1>
+        <nav>
+            <ul id="nav-links">
+                <!-- Dynamic navigation links will be injected here -->
+            </ul>
+        </nav>       
+    </header>
+    <section id="game-details">
+        <div class="game-detail-content">
+            <h2 id="game-name"></h2>
+            <img id="game-image" src="" alt="" class="game-detail-image" onclick="openModal(this)">
+            <p id="game-description"></p>
+            <p id="game-details-text"></p>
+            <p id="game-price"></p>
+        </div>
+        <!-- Rent Form -->
+        <div id="rent-form" style="display: none;">
+            <h3>Rent this Game</h3>
+            <form id="rent-game-form">
+                <label for="rent-name">Name:</label>
+                <input type="text" id="rent-name" name="rent-name" required>
+                <label for="rent-start-date">Start Date:</label>
+                <input type="date" id="rent-start-date" name="rent-start-date" required>
+                <label for="rent-end-date">End Date:</label>
+                <input type="date" id="rent-end-date" name="rent-end-date" required>
+                <label for="rent-comment">Comment:</label>
+                <textarea id="rent-comment" name="rent-comment"></textarea>
+                <br>
+                <button type="submit">Rent</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Board Game Rental. All rights reserved.</p>
+    </footer>    
+    <script src="app.js"></script>
+</body>
+</html>
