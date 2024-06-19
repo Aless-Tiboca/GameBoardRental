@@ -20,3 +20,29 @@ To run this project locally, you will need a web browser and a code editor.
 1. Clone the repository:
    ```bash
    git clone https://github.com/Aless-Tiboca/GameBoardRental.git
+2. Navigate to the project directory:
+   ```bash
+   cd GameBoardRental
+
+3. Open `index.html` in your web browser to view the application.
+
+## Project Structure
+
+- `index.html`: The main landing page.
+- `games.html`: Page listing all available board games.
+- `game-details.html`: Detailed view of a selected game.
+- `login.html`: User login page.
+- `signup.html`: User registration page.
+- `profile.html`: User profile management page.
+- `app.js`: Main JavaScript file for handling interactions.
+- `style.css`: Main stylesheet for the application.
+- `games.json`: Sample data for board games.
+- `users.json`: Sample data for user information.
+
+## Usage
+
+1. Open the application in your browser.
+2. Sign up for a new account or log in with existing credentials.
+3. Browse the game listings and select a game to view its details.
+4. Rent the game directly from the detail page.
+
