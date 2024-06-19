@@ -1,6 +1,7 @@
 # GameBoardRental
 
 GameBoardRental is a simple web application for renting board games. This project uses HTML, CSS, and JavaScript to create an interactive platform for users to browse and rent various board games.
+This project was a university assignment where I was restricted from using any frameworks. Currently, the backend is not implemented and the application only uses JavaScript `localStorage` for data handling at a surface level.
 
 ## Features
 
